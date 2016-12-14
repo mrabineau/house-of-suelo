@@ -1,4 +1,4 @@
-* {
+body {
   background-color: #FCC9B9;
 }
 
@@ -29,7 +29,7 @@
 }*/
 
 
-h1 {
+#intro {
   text-align: center;
   font-family: 'Space Mono', monospace;
   color: #19B5FE;

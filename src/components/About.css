@@ -1,0 +1,20 @@
+body {
+  background-color: #87D37C;
+}
+.About {
+  /*background-color: black;*/
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 30px;
+  font-family: 'Space Mono', monospace;
+  color: #F62459;
+
+}
+
+#tree {
+  height: 40%;
+  width: 40%;
+}
