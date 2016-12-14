@@ -1,0 +1,47 @@
+* {
+  background-color: #FCC9B9;
+}
+
+.App {
+  text-align: center;
+
+}
+
+/*.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/
+
+
+h1 {
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  color: #19B5FE;
+}
+
+img#boobs {
+  height: 40%;
+  width: 40%;
+}
+
+#mainbutton {
+  margin-top: 50px;
+  color: #F5AB35;
+  font-family: 'Space Mono', monospace;
+}
