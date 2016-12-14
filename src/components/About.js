@@ -1,33 +1,48 @@
 import React, { Component } from 'react';
 import './About.css';
 import '../App.js';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+// import 'TweenMax'
 // import { Router, Route, Link, browserHistory } from 'react-router';
-
+import { Link } from 'react-router';
 
 
 class About extends Component {
-    getInitialState () {
-      return {
-        bgColor: 'red'
-      }
-    }
+  constructor(props){
+    super(props);
+    this.state = {images: ["jacket.JPG", "collar.JPG", "boobs2.JPG", "crabhat.JPG", "fries.JPG", "peli.JPG", "hat.JPG", "jacket1.JPG", "naked.JPG", "pasta.JPG", "soda.JPG"],
+    selected:0}
+    this.handleAdd = this.handleAdd.bind(this);
+  }
 
-    handleClick () {
-      this.setState({
-        bgColor: 'blue'
-      })
-    }
+
+  handleAdd () {
+    const nextIndex = this.state.selected + 1;
+    if (nextIndex >= this.state.images.length){
+        this.setState({selected: 0})
+    } else {
+      this.setState({selected: nextIndex})
+  }
+
+  console.log(nextIndex);
+}
 
       render () {
+        let selected = this.state.selected;
+        const rootURL = `/House_of_Suelo_pix/${this.state.images[selected]}`;
         return (
             <div className="About">
-              <h1 id="head"><button onClick={this.handleClick}
-                                    style={{backgroundColor:this.state.bgColor}}>
-                                        CUSTOMIZE YOUR SHIT </button> </h1>
-                  <img id="tree" src="/House_of_Suelo_pix/jacket.JPG" alt="main img"/>
+               <div  className="main">
+                  <h1 id="blue"> CUSTOMIZE YOUR SHIT </h1>
+                        <ReactCSSTransitionGroup>
+                            <img id="addImage" src={rootURL} alt="img"></img>
+                        </ReactCSSTransitionGroup>
+                  </div>
+               <button type="button" className="btn" onClick={this.handleAdd}>TAKE A LOOK</button>
             </div>
+
         );
-      }
+     }
 }
 
 

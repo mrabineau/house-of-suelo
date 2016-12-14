@@ -1,20 +1,66 @@
-body {
+/*body {
   background-color: #87D37C;
-}
+}*/
 .About {
   /*background-color: black;*/
   text-align: center;
+  background-color: #87D37C;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-h1 {
+.main {
+  background-image: url(http://i.giphy.com/8OtNPFGuyk7Wo.gif);
+}
+
+#blue {
   font-size: 50px;
   margin-top: 30px;
   font-family: 'Space Mono', monospace;
-  color: #F62459;
+  color: dodgerblue;
+  text-shadow:
+        /*first layer at 1px*/
+         -1px -1px 0px #000,
+         0px -1px 0px #000,
+         1px -1px 0px #000,
+        -1px  0px 0px #000,
+         1px  0px 0px #000,
+        -1px  1px 0px #000,
+         0px  1px 0px #000,
+         1px  1px 0px #000,
+        /* second layer at 2px */
+        -2px -2px 0px #000,
+        -1px -2px 0px #000,
+         0px -2px 0px #000,
+         1px -2px 0px #000,
+         2px -2px 0px #000,
+         2px -1px 0px #000,
+         2px  0px 0px #000,
+         2px  1px 0px #000,
+         2px  2px 0px #000,
+         1px  2px 0px #000,
+         0px  2px 0px #000,
+        -1px  2px 0px #000,
+        -2px  2px 0px #000,
+        -2px  1px 0px #000,
+        -2px  0px 0px #000,
+        -2px -1px 0px #000;
 
 }
 
-#tree {
-  height: 40%;
-  width: 40%;
+#addImage {
+  max-height: 40%;
+  max-width: 40%;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+button {
+  margin: 5px;
+  border-radius: 0;
+  font-family: 'Space Mono', monospace;
+  background-color: #F5D76E;
+  font-style: bold;
 }
