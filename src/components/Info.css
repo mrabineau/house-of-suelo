@@ -21,7 +21,7 @@
 }
 
 .text {
-  font-family: 'Fontdiner Swanky', cursive;
+  font-family: 'Space Mono', monospace;
   color: #FACADE;
   text-shadow: /*first layer at 1px*/
          -1px -1px 0px #000,

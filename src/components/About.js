@@ -48,12 +48,7 @@ class About extends Component {
                           </ReactCSSTransitionGroup>
                     </div>
                  <button id="bottom" type="button" className="btn" onClick={this.handleAdd}>TAKE A LOOK</button>
-                <h4> To place an order, just send us your name and email and we will contact you :D </h4>
-              <form action="https://formspree.io/melanie.rabineau@gmail.com">
-                  <input type="text" name="name" placeholder="Your Name"/>
-                  <input type="email" name="_replyto" placeholder="Your Email" />
-                  <input type="submit" value="Send" id="send"/>
-              </form>
+                <h4> To place an order, just send us an email at [house of suelo email] :D </h4>
               </div>
           </div>
         );

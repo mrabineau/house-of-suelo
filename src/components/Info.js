@@ -4,7 +4,7 @@ import '../App.js';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import 'react-router'
 // import Particles from 'react-particles'
-// import { Link } from 'react-router';
+import { Link } from 'react-router';
 import Particles from 'react-particles-js';
 
     class Info extends Component {
@@ -13,6 +13,7 @@ import Particles from 'react-particles-js';
         <div className="infoBody">
             <div className="Info">
               <div id="aboutDiv">
+                      <button id="back" type="button" className="btn"><Link to="/about"> BACK </Link></button>
                 <div className="friendship">
                   <h1 className="text"> BBY CONSUELO AKA AIDAN REESE ROMICK </h1>
                   <h2 className="text"> YOUR QUEEN </h2>
