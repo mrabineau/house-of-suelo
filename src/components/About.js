@@ -4,7 +4,31 @@ import '../App.js';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 // import 'TweenMax'
 // import { Router, Route, Link, browserHistory } from 'react-router';
-import { Link } from 'react-router';
+import { Link, Info } from 'react-router';
+
+
+
+
+
+// class Header extends Component {
+//   constructor(props){
+//     super(props);
+//     this.state = {colors: ['#F7CA18', '#26A65B', '#003171', '#BF55EC', '#F62459', '#DC3023'], selectedColor: 0}
+//     this.colorChange = this.colorChange.bind(this);
+//     const headerChange = ({text: "CUSTOMIZE YOUR SHIT", color: {selected: 0} })
+//   }
+
+//     colorChange () {
+//       const nextColor = this.state.selected +1;
+//       if (nextColor >= this.state.colors.length){
+//         this.setState({selectedColor: 0})
+//       } else {
+//         this.setState({selectedColor: nextColor})
+//       }
+//     }
+
+// }
+
 
 
 class About extends Component {
@@ -12,8 +36,19 @@ class About extends Component {
     super(props);
     this.state = {images: ["jacket.JPG", "collar.JPG", "boobs2.JPG", "crabhat.JPG", "fries.JPG", "peli.JPG", "hat.JPG", "jacket1.JPG", "naked.JPG", "pasta.JPG", "soda.JPG"],
     selected:0}
+    // this.state = {colors: ['#F7CA18', '#26A65B', '#003171', '#BF55EC', '#F62459', '#DC3023'], selected: 0}
     this.handleAdd = this.handleAdd.bind(this);
+    // this.colorChange = this.colorChange.bind(this);
   }
+
+   // colorChange () {
+   //    const nextColor = this.state.selected +1;
+   //     if (nextColor >= this.state.colors.length){
+   //       this.setState({selected: 0})
+   //     } else {
+   //       this.setState({selected: nextColor})
+   //     }
+   //   }
 
 
   handleAdd () {
@@ -28,13 +63,19 @@ class About extends Component {
 }
 
       render () {
+        // let selectedColor = this.state.selected;
         let selected = this.state.selected;
         const rootURL = `/House_of_Suelo_pix/${this.state.images[selected]}`;
         return (
             <div className="About">
+                      <button type="button" className="topbtn"><Link to="/info"> BABY CONSUELO </Link></button>
                <div  className="main">
                   <h1 id="blue"> CUSTOMIZE YOUR SHIT </h1>
-                        <ReactCSSTransitionGroup>
+
+                        <ReactCSSTransitionGroup
+                        transitionName="image"
+                        transitionEnterTimeout={500}
+                        transitionLeaveTimeout={300}>
                             <img id="addImage" src={rootURL} alt="img"></img>
                         </ReactCSSTransitionGroup>
                   </div>
