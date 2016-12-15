@@ -3,13 +3,16 @@ import './Info.css';
 import '../App.js';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import 'react-router'
+// import Particles from 'react-particles'
 // import { Link } from 'react-router';
 
     class Info extends Component {
         render () {
         return (
-          <div className="Info">
-              <h1> PAGE 3 </h1>
+
+            <div className="Info">
+                <h1> PAGE 3 </h1>
+
           </div>
         );
       }

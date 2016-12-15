@@ -1,6 +1,10 @@
 /*body {
   background-color: #87D37C;
 }*/
+body {
+  align-items: center;
+}
+
 .About {
   /*background-color: black;*/
   text-align: center;
@@ -91,7 +95,15 @@ button {
 
 }
 
+button#all {
+  -webkit-animation: glowing 4000ms infinite;
+  -moz-animation: glowing 4000ms infinite;
+  -o-animation: glowing 4000ms infinite;
+  animation: glowing 4000ms infinite;
+}
+
 button#top {
+
   -webkit-animation: glowing 4000ms infinite;
   -moz-animation: glowing 4000ms infinite;
   -o-animation: glowing 4000ms infinite;

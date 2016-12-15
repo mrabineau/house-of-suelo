@@ -4,30 +4,7 @@ import '../App.js';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 // import 'TweenMax'
 // import { Router, Route, Link, browserHistory } from 'react-router';
-import { Link, Info } from 'react-router';
-
-
-
-
-
-// class Header extends Component {
-//   constructor(props){
-//     super(props);
-//     this.state = {colors: ['#F7CA18', '#26A65B', '#003171', '#BF55EC', '#F62459', '#DC3023'], selectedColor: 0}
-//     this.colorChange = this.colorChange.bind(this);
-//     const headerChange = ({text: "CUSTOMIZE YOUR SHIT", color: {selected: 0} })
-//   }
-
-//     colorChange () {
-//       const nextColor = this.state.selected +1;
-//       if (nextColor >= this.state.colors.length){
-//         this.setState({selectedColor: 0})
-//       } else {
-//         this.setState({selectedColor: nextColor})
-//       }
-//     }
-
-// }
+import { Link, Info, Photos } from 'react-router';
 
 
 
@@ -56,21 +33,23 @@ class About extends Component {
         let selected = this.state.selected;
         const rootURL = `/House_of_Suelo_pix/${this.state.images[selected]}`;
         return (
-            <div className="About">
-                      <button id="top" type="button" className="btn"><Link to="/info"> WHO EVEN <strong> IS </strong> BBY CONSUELO </Link></button>
-               <div  className="main">
-                  <h1 id="blue"> CUSTOMIZE YOUR SHIT </h1>
+        <div className = "body">
+            <button id="all" type="button" className="btn"><Link to="/photos"> SEE ALL </Link></button>
+            <button id="top" type="button" className="btn"><Link to="/info"> WHO EVEN <strong> IS </strong> BBY CONSUELO </Link></button>
+              <div className="About">
+                 <div  className="main">
+                    <h1 id="blue"> CUSTOMIZE YOUR SHIT </h1>
 
-                        <ReactCSSTransitionGroup
-                        transitionName="image"
-                        transitionEnterTimeout={500}
-                        transitionLeaveTimeout={300}>
-                            <img id="addImage" src={rootURL} alt="img"></img>
-                        </ReactCSSTransitionGroup>
-                  </div>
-               <button id="bottom" type="button" className="btn" onClick={this.handleAdd}>TAKE A LOOK</button>
-            </div>
-
+                          <ReactCSSTransitionGroup
+                          transitionName="image"
+                          transitionEnterTimeout={500}
+                          transitionLeaveTimeout={300}>
+                              <img id="addImage" src={rootURL} alt="img"></img>
+                          </ReactCSSTransitionGroup>
+                    </div>
+                 <button id="bottom" type="button" className="btn" onClick={this.handleAdd}>TAKE A LOOK</button>
+              </div>
+          </div>
         );
      }
 }
