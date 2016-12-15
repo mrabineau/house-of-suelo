@@ -116,3 +116,11 @@ button#bottom {
   -o-animation: glowing 1500ms infinite;
   animation: glowing 1500ms infinite;
 }
+
+h4 {
+  font-family: 'Space Mono', monospace;
+}
+
+#send {
+  font-family: 'Space Mono', monospace;
+}

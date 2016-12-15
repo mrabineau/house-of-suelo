@@ -13,17 +13,19 @@ import Particles from 'react-particles-js';
         <div className="infoBody">
             <div className="Info">
               <div id="aboutDiv">
-               <h1 className="text"> BBY CONSUELO AKA AIDAN REESE ROMICK </h1>
+                <div className="friendship">
+                  <h1 className="text"> BBY CONSUELO AKA AIDAN REESE ROMICK </h1>
                   <h2 className="text"> YOUR QUEEN </h2>
+                    <img id="aidan" src="/House_of_Suelo_pix/aid.JPG" alt="aidan"/>
+                </div>
               </div>
-                <Particles params={{
+                <Particles className="particles-js" params={{
                     "particles": {
                       "number": {
                         "value": 265,
                         "density": {
                           "enable": true,
-                          "value_area": 946.9771699587272
-                        }
+                          "value_area": 946.9771699587272}
                       },
                       "color": {
                         "value": "#000"
@@ -127,8 +129,6 @@ import Particles from 'react-particles-js';
                     "retina_detect": true
                   }
               }/>
-
-
           </div>
          </div>
         );
