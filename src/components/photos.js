@@ -26,23 +26,18 @@ import PhotoOverview from './PhotoOverview.js';
             "cherry.JPG"
           ],
           selected: null,
-          // modalIsOpen: false
+
 
         }
         this.selectPhoto = this.selectPhoto.bind(this)
       }
 
-      // toggleModal() {
-      //   this.setState({
-      //     modalIsOpen: true
-      //   })
-      // }
 
 
       selectPhoto (index) {
-        console.log(this)
-        this.setState({selected: index ? index : null })
-
+          if (index !== null) {
+            this.setState({selected: index})
+          }
       }
 
 
@@ -56,7 +51,8 @@ import PhotoOverview from './PhotoOverview.js';
           return (
             <div id="photoContainer">
             {
-              this.state.selected
+              (this.state.selected || this.state.selected === 0)
+
               ?
             <PhotoOverview imageSource={"/House_of_Suelo_pix/" + this.state.images[this.state.selected]}
                             deselect={this.selectPhoto}/>
@@ -83,13 +79,3 @@ import PhotoOverview from './PhotoOverview.js';
 export default Photos;
 
 
-    // <Button onClick={() => this.toggleModal()}>Launch Modal</Button>
-
-   // <Modal isOpen={this.state.modalIsOpen} onCancel={this.toggleModal} backdropClosesModal id="modal">
-   //   <ModalHeader text="Lots of text to show scroll behavior" showCloseButton onClose={() => this.toggleModal()} />
-   //   <ModalBody>{photoDivs.selected}</ModalBody>
-   //   <ModalFooter>
-   //     <Button type="primary" onClick={() => this.toggleModal()}>Close modal</Button>
-   //     <Button type="link-cancel" onClick={() => this.toggleModal()}>Also closes modal</Button>
-   //   </ModalFooter>
-   // </Modal>

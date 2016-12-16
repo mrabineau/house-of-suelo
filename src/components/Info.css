@@ -67,7 +67,7 @@ h2.text {
 .friendship {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 5%;
   pointer-events: none;
   margin-top: 10px;
   margin-left: 20%;
