@@ -74,8 +74,8 @@ class About extends Component {
                               <img id="addImage" src={rootURL} alt="img"></img>
                           </ReactCSSTransitionGroup>
                     </div>
+                 <button id="reverse" type="button" className="btn" onClick={this.handleBack}>Back</button>
                  <button id="bottom" type="button" className="btn" onClick={this.handleAdd}>Forward</button>
-                 <button id="back" type="button" className="btn" onClick={this.handleBack}>Back</button>
                 <h4> To place an order, just send us an email at [house of suelo email] :D </h4>
               </div>
           </div>

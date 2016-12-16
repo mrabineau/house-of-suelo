@@ -85,6 +85,18 @@ body {
   100% { background-color: #4B77BE; box-shadow: 0 0 3px #4B77BE; }
 }
 
+@keyframes glowingPink {
+  0% { background-color: #FACADE; box-shadow: 0 0 3px #FACADE; }
+  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #FACADE; box-shadow: 0 0 3px #FACADE; }
+}
+
+@keyframes glowingBlue {
+  0% { background-color: #0094FF; box-shadow: 0 0 3px #0094FF; }
+  50% { background-color: #FACADE; box-shadow: 0 0 10px #FACADE; }
+  100% { background-color: #0094FF; box-shadow: 0 0 3px #0094FF; }
+}
+
 
 button {
   margin: 5px;
@@ -111,10 +123,11 @@ button#top {
 }
 
 button#bottom {
-  -webkit-animation: glowing 1500ms infinite;
-  -moz-animation: glowing 1500ms infinite;
-  -o-animation: glowing 1500ms infinite;
-  animation: glowing 1500ms infinite;
+  animation: glowingBlue 1500ms infinite;
+}
+
+button#reverse {
+  animation: glowingPink 1500ms infinite;
 }
 
 h4 {

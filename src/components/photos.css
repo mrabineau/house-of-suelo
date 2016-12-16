@@ -1,3 +1,13 @@
+.absolute {
+  position: absolute;
+  max-height: 60%;
+  max-width: 60%;
+  margin: 0 auto;
+  left: 30%;
+  top: 30%;
+  box-shadow: 0px 0px 30px dodgerblue;
+}
+
 #photoContainer {
   align-items: center;
 }
