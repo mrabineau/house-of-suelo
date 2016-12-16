@@ -20,8 +20,9 @@
   align-items: center;
 }
 
-#back {
+button#back {
   background-color: none;
+  margin-left: 0px;
 }
 
 .text {

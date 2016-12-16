@@ -63,7 +63,7 @@ import PhotoOverview from './PhotoOverview.js';
               :
               null
              }
-              <button id="back" type="button" className="btn"><Link to="/about"> BACK </Link></button>
+              <button id="back" type="button" className="btn"><Link to="/about"> &#x2190; </Link></button>
                 <div className="imgBody">
                   <div className ="allpix">
                     {photoDivs}
