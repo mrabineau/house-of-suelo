@@ -14,10 +14,14 @@
 }
 
 #aboutDiv {
-  /*position: relative;*/
+  position: relative;
 /*  margin: 0 auto;
 */
   align-items: center;
+}
+
+#back {
+  background-color: none;
 }
 
 .text {
@@ -61,22 +65,18 @@ h2.text {
 
 .friendship {
   position: absolute;
- /* top: 50%;
-  left: 10%;*/
+  top: 50%;
+  left: 10%;
   pointer-events: none;
-  margin-left: 25%;
+  margin-top: 10px;
+  margin-left: 20%;
   text-align: center;
 }
 
 #aidan {
-  box-shadow: 10px 10px;
-  height: 30%;
-  width: 30%;
+  height: 40%;
+  width: 40%;
 }
 
-p {
-  height: 20%;
-  width: 20%;
-}
 
 

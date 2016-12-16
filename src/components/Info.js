@@ -13,7 +13,7 @@ import Particles from 'react-particles-js';
         <div className="infoBody">
             <div className="Info">
               <div id="aboutDiv">
-                      <button id="back" type="button" className="btn"><Link to="/about"> BACK </Link></button>
+                    <button id="back" type="button"><Link to="/about"> BACK </Link></button>
                 <div className="friendship">
                   <h1 className="text"> BBY CONSUELO AKA AIDAN REESE ROMICK </h1>
                   <h2 className="text"> YOUR QUEEN </h2>

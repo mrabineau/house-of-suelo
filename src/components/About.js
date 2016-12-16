@@ -11,22 +11,49 @@ import { Link, Info, Photos } from 'react-router';
 class About extends Component {
   constructor(props){
     super(props);
-    this.state = {images: ["jacket.JPG", "collar.JPG", "boobs2.JPG", "crabhat.JPG", "fries.JPG", "peli.JPG", "hat.JPG", "jacket1.JPG", "naked.JPG", "pasta.JPG", "soda.JPG"],
-    selected:0}
+    this.state = {images: ["jacket.JPG",
+                           "collar.JPG",
+                           "boobs2.JPG",
+                           "crabhat.JPG",
+                           "fries.JPG",
+                           "peli.JPG",
+                            "hat.JPG",
+                            "jacket1.JPG",
+                            "naked.JPG",
+                            "pasta.JPG",
+                            "soda.JPG"],
+                            selected:0}
     this.handleAdd = this.handleAdd.bind(this);
+    this.handleBack = this.handleBack.bind(this);
   }
 
 
-  handleAdd () {
-    const nextIndex = this.state.selected + 1;
-    if (nextIndex >= this.state.images.length){
-        this.setState({selected: 0})
+      handleAdd () {
+        const nextIndex = this.state.selected + 1;
+        if (nextIndex >= this.state.images.length){
+            this.setState({selected: 0})
+        } else {
+          this.setState({selected: nextIndex})
+      }
+
+      console.log(nextIndex);
+    }
+
+
+ handleBack () {
+    const nextIndex = this.state.selected - 1;
+    if (nextIndex < 0 ){
+        this.setState({selected: this.state.images.length -1})
     } else {
       this.setState({selected: nextIndex})
   }
 
   console.log(nextIndex);
 }
+
+
+
+
 
       render () {
         // let selectedColor = this.state.selected;
@@ -47,7 +74,8 @@ class About extends Component {
                               <img id="addImage" src={rootURL} alt="img"></img>
                           </ReactCSSTransitionGroup>
                     </div>
-                 <button id="bottom" type="button" className="btn" onClick={this.handleAdd}>TAKE A LOOK</button>
+                 <button id="bottom" type="button" className="btn" onClick={this.handleAdd}>Forward</button>
+                 <button id="back" type="button" className="btn" onClick={this.handleBack}>Back</button>
                 <h4> To place an order, just send us an email at [house of suelo email] :D </h4>
               </div>
           </div>
