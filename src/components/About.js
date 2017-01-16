@@ -65,7 +65,7 @@ class About extends Component {
             <button id="top" type="button" className="btn"><Link to="/info"> WHO EVEN <strong> IS </strong> BBY CONSUELO </Link></button>
               <div className="About">
                  <div  className="main">
-                    <h1 id="blue"> CUSTOMIZE YOUR SHIT </h1>
+                    <h1 id="blue"> CUSTOMIZE EMBROIDERY FOR YOUR CUSTOM LIFE </h1>
 
                           <ReactCSSTransitionGroup
                           transitionName="image"

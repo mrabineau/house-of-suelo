@@ -51,7 +51,7 @@ import PhotoOverview from './PhotoOverview.js';
           return (
             <div id="photoContainer">
             {
-              (this.state.selected || this.state.selected === 0)
+              (typeof this.state.selected === 'number')
 
               ?
             <PhotoOverview imageSource={"/House_of_Suelo_pix/" + this.state.images[this.state.selected]}
