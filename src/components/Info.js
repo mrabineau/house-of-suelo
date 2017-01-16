@@ -5,6 +5,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import 'react-router'
 // import Particles from 'react-particles'
 import { Link } from 'react-router';
+import Bio from './Bio.js';
 import Particles from 'react-particles-js';
 
     class Info extends Component {
@@ -14,11 +15,12 @@ import Particles from 'react-particles-js';
             <div className="Info">
               <div id="aboutDiv">
                     <button id="back" type="button"><Link to="/about"> &#x2190; </Link></button>
-                <div className="friendship">
-                  <h1 className="text"> BBY CONSUELO AKA AIDAN REESE ROMICK </h1>
-                  <h2 className="text"> YOUR QUEEN </h2>
-                    <img id="aidan" src="/House_of_Suelo_pix/aid.JPG" alt="aidan"/>
-                </div>
+                  <div className="friendship">
+                    <h1 className="text"> BBY CONSUELO AKA AIDAN REESE ROMICK </h1>
+                    <h2 className="text"> YOUR QUEEN </h2>
+                      <img id="aidan" src="/House_of_Suelo_pix/aid.JPG" alt="aidan"/>
+                  </div>
+                <Bio />
               </div>
                 <Particles className="particles-js" params={{
                     "particles": {
