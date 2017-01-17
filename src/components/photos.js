@@ -65,7 +65,6 @@ import PhotoOverview from './PhotoOverview.js';
                     {photoDivs}
                   </div>
                 </div>
-                }
             </div>
             );
         }
