@@ -11,13 +11,13 @@ import { Link, Info, Photos } from 'react-router';
 class About extends Component {
   constructor(props){
     super(props);
-    this.state = {images: ["jacket.JPG",
+    this.state = {images: ["hat.JPG",
+                          "jacket.JPG",
                            "collar.JPG",
                            "boobs2.JPG",
                            "crabhat.JPG",
                            "fries.JPG",
                            "peli.JPG",
-                            "hat.JPG",
                             "jacket1.JPG",
                             "naked.JPG",
                             "pasta.JPG",
