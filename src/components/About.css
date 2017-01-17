@@ -11,7 +11,7 @@ body {
   background-color: #87D37C;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 100px;
 }
 
@@ -61,28 +61,16 @@ body {
   margin-bottom: 15px;
 }
 
-@-webkit-keyframes glowing {
-  0% { background-color: #4B77BE; -webkit-box-shadow: 0 0 3px #4B77BE; }
-  50% { background-color: #0094FF; -webkit-box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #4B77BE; -webkit-box-shadow: 0 0 3px #4B77BE; }
+@keyframes glowingGreen {
+  0% { background-color: #87D37C; box-shadow: 0 0 3px #87D37C; }
+  50% { background-color: #26A65B; box-shadow: 0 0 10px #26A65B; }
+  100% { background-color: #87D37C; box-shadow: 0 0 3px #87D37C; }
 }
 
-@-moz-keyframes glowing {
-  0% { background-color: #4B77BE; -moz-box-shadow: 0 0 3px #4B77BE; }
-  50% { background-color: #0094FF; -moz-box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #4B77BE; -moz-box-shadow: 0 0 3px #4B77BE; }
-}
-
-@-o-keyframes glowing {
-  0% { background-color: #4B77BE; box-shadow: 0 0 3px #4B77BE; }
-  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #4B77BE; box-shadow: 0 0 3px #4B77BE; }
-}
-
-@keyframes glowing {
-  0% { background-color: #4B77BE; box-shadow: 0 0 3px #4B77BE; }
-  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #4B77BE; box-shadow: 0 0 3px #4B77BE; }
+@keyframes glowingGreenInverse {
+  0% { background-color: #26A65B; box-shadow: 0 0 10px #26A65B; }
+  50% { background-color: #87D37C; box-shadow: 0 0 3px #87D37C; }
+  100% { background-color: #26A65B; box-shadow: 0 0 10px #26A65B; }
 }
 
 @keyframes glowingPink {
@@ -104,22 +92,14 @@ button {
   font-family: 'Space Mono', monospace;
   background-color: #F5D76E;
   font-style: bold;
-
 }
 
 button#all {
-  -webkit-animation: glowing 4000ms infinite;
-  -moz-animation: glowing 4000ms infinite;
-  -o-animation: glowing 4000ms infinite;
-  animation: glowing 4000ms infinite;
+  animation: glowingGreen 4000ms infinite;
 }
 
 button#top {
-
-  -webkit-animation: glowing 4000ms infinite;
-  -moz-animation: glowing 4000ms infinite;
-  -o-animation: glowing 4000ms infinite;
-  animation: glowing 4000ms infinite;
+  animation: glowingGreenInverse 4000ms infinite;
 }
 
 button#bottom {

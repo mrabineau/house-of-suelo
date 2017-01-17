@@ -11,6 +11,7 @@
 
 #photoContainer {
   align-items: center;
+  margin-left: 5%;
 }
 
 #back {
@@ -34,7 +35,7 @@
 
 
 .photo {
-  margin: 20px;
+  margin: 30px;
   max-height: 205px;
   max-width: 205px;
   animation: glowingImage 4000ms infinite;
