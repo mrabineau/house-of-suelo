@@ -76,7 +76,7 @@ class About extends Component {
                     </div>
                  <button id="reverse" type="button" className="btn" onClick={this.handleBack}>&#x2190;</button>
                  <button id="bottom" type="button" className="btn" onClick={this.handleAdd}>&#x2192;</button>
-                <h4> To place an order, just send us an email at [house of suelo email] :D </h4>
+                <h4> To place an order, just send us an email at aidan@houseofsuelo.com :D </h4>
               </div>
           </div>
         );
