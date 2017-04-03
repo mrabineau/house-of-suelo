@@ -28,35 +28,32 @@ class About extends Component {
   }
 
 
-      handleAdd () {
-        const nextIndex = this.state.selected + 1;
-        if (nextIndex >= this.state.images.length){
-            this.setState({selected: 0})
-        } else {
-          this.setState({selected: nextIndex})
+  handleAdd () {
+    const nextIndex = this.state.selected + 1;
+    if (nextIndex >= this.state.images.length){
+      this.setState({selected: 0})
+    } else {
+        this.setState({selected: nextIndex})
       }
-
-      console.log(nextIndex);
+        console.log(nextIndex);
     }
 
 
- handleBack () {
+  handleBack () {
     const nextIndex = this.state.selected - 1;
     if (nextIndex < 0 ){
-        this.setState({selected: this.state.images.length -1})
+      this.setState({selected: this.state.images.length -1})
     } else {
       this.setState({selected: nextIndex})
-  }
-
-  console.log(nextIndex);
-}
+      }
+    console.log(nextIndex);
+    }
 
 
 
 
 
       render () {
-        // let selectedColor = this.state.selected;
         let selected = this.state.selected;
         const rootURL = `/House_of_Suelo_pix/${this.state.images[selected]}`;
         return (
@@ -66,14 +63,8 @@ class About extends Component {
               <div className="About">
                  <div  className="main">
                     <h1 id="blue"> CUSTOM EMBROIDERY FOR YOUR CUSTOM LIFE </h1>
-
-                          <ReactCSSTransitionGroup
-                          transitionName="image"
-                          transitionEnterTimeout={500}
-                          transitionLeaveTimeout={300}>
-                              <img id="addImage" src={rootURL} alt="img"></img>
-                          </ReactCSSTransitionGroup>
-                    </div>
+                           <img id="addImage" src={rootURL} alt="img"></img>
+                  </div>
                  <button id="reverse" type="button" className="btn" onClick={this.handleBack}>&#x2190;</button>
                  <button id="bottom" type="button" className="btn" onClick={this.handleAdd}>&#x2192;</button>
                 <h4> To place an order, just send us an email at aidan@houseofsuelo.com :D </h4>
@@ -84,5 +75,5 @@ class About extends Component {
 }
 
 
-// const colors = ['#F7CA18', '#26A65B', '#003171', '#BF55EC', '#F62459', '#DC3023']
+
 export default About;

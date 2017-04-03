@@ -13,7 +13,6 @@ class PhotoOverview extends Component {
       return (
         <img className="absolute"
              src={ this.props.imageSource}
-             // alt="test"
               onClick= {this.props.deselect}/>
        )
     }

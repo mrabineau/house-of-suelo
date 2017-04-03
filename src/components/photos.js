@@ -47,7 +47,6 @@ import PhotoOverview from './PhotoOverview.js';
             return <img className="photo" src={rootUrl} alt="pix" key={index} onClick={() => this.selectPhoto(index)} />
           });
 
-          console.log(photoDivs);
           return (
             <div id="photoContainer">
             {
